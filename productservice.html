@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="productApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Search Product Data</title>
+    <script src="https://code.angularjs.org/1.4.4/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="ProductController.js"></script>
+</head>
+<body>
+<div ng-controller="ProductController as pvm">
+
+    <input type="text" ng-model="pvm.search">
+
+    <select ng-model="pvm.order">
+        <option value="pname">Order By Name</option>
+        <option value="price">Order By Price</option>
+    </select>
+
+    <label >
+        <input type="radio" ng-model="pvm.direction" name="direction" checked>
+        Ascending
+    </label>
+    <label >
+        <input type="radio" ng-model="pvm.direction" name="direction" value="reverse">
+        Descending
+    </label>
+	<table>
+	<th>Name</th>
+	<th>Desc</th>
+	<th>Price</th>
+    <tr  ng-repeat="pobj in pvm.product | filter:pvm.search | orderBy:order:pvm.direction">
+
+        <td>{{pobj.pname}}</td>
+        <td>{{pobj.desc}} </td>
+        <td>{{pobj.price | number}} </td>
+
+    </tr>
+	</table>
+
+</div>
+
+</body>
+</html>

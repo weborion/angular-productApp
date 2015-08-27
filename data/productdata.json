@@ -1,0 +1,43 @@
+[
+{
+    "pcode" : "p100",
+    "pname" : "Kaliedoscope",
+    "desc":"Kaliedoscope Desc",
+    "price":"150"
+  },
+  {
+   "pcode" : "p001",
+
+   "pname" : "Tower of Hannoi",
+    "desc":"Tower of Hannoi Desc",
+    "price":"200"
+  },
+  {
+
+   "pcode" : "p002",
+    "pname" : "Magic with Science",
+    "desc":"ACCT",
+    "price":"120"
+  },
+  {
+
+   "pcode" : "p003",
+    "pname" : "Hello Magnets",
+    "desc":"Hello magnets- included in our range is the kit that contains all types of magnets and related components",
+    "price":"26"
+  },
+  {
+
+    "pcode" : "p004",
+    "pname" : "Electricity From Solar Energy",
+    "desc":"we bring forth for students electricity-from-solar-energy.",
+    "price":"300"
+  },
+  {
+    
+"pcode" : "p005",
+    "pname" : "Make a Newtons cradle",
+    "desc":"One of the most popular educational toys offered by us is make-a-Newton’s-cradle",
+    "price":"400"
+  }
+]
